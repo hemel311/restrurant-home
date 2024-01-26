@@ -10,7 +10,7 @@ class Menu extends Component
     {
         const menu=this.state.dishes.map(item=>{
             return(
-                <MenuList item={item}/>
+                <MenuList item={item} key={item.id}/>
             )
         })
         return(

@@ -96,7 +96,7 @@ const DISHES = [
     {
         id: 2,
         name: 'French Fries',
-        image: 'assets/images/2fries.jpeg',
+        image: 'assets/images/2fries.jpg',
         category: 'appetizer',
         label: 'New',
         price: '120',
