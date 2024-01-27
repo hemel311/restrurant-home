@@ -8,12 +8,13 @@ const MenuList=props=>{
                 <CardBody>
                     <CardImg
                         width="100%"
-                        alt={props.item.name}
-                        src={props.item.image}
+                        alt={props.dish.name}
+                        src={props.dish.image}
                         style={{opacity:"0.5"}}
                     />
                     <CardImgOverlay>
-                        <CardTitle>{props.item.name}</CardTitle>
+                        <CardTitle style={{cursor:"pointer"}} 
+                        onClick={()=>{props.DishSelect(props.dish)}}>{props.dish.name}</CardTitle>
                     </CardImgOverlay>
                 </CardBody>
             </Card>
